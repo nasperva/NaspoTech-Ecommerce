@@ -1,0 +1,115 @@
+.product-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .product-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+  }
+  
+  .product-image {
+    max-width: 100%;
+    width: 800px;
+    min-width: 500px;
+    max-height: 100%;
+  }
+  
+  .product-details-container {
+    flex: 2;
+    padding: 1rem;
+    min-width: 400px;
+  }
+  
+  .product-name {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top:-120px;
+  }
+  
+  .product-details {
+    margin-top: 1rem;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  .product-details p {
+    margin: 0.5rem 0;
+    max-width: 500px;
+  }
+  
+  .product-details button {
+    margin-top: 1rem;
+  }
+
+.addToCartBttn {
+  height: 55px;
+  padding: 10px 40px;
+ font-size: 18px;
+ background-color: #008542;
+ color: #fff;
+ text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ border: 0;
+ z-index: 1;
+ user-select: none;
+ cursor: pointer;
+ letter-spacing: 1px;
+ white-space: unset;
+ padding: .8rem 1.5rem;
+ text-decoration: none;
+ font-weight: 900;
+ transition: all 0.7s cubic-bezier(0,.8,.26,.99);
+}
+
+.addToCartBttn:before {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: '';
+  transition: .7s cubic-bezier(0,.8,.26,.99);
+  z-index: -1;
+  background-color: #008542!important;
+  box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
+ }
+
+ .addToCartBttn:after {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: '';
+  box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+  transition: .7s cubic-bezier(0,.8,.26,.99);
+ }
+
+ .addToCartBttn:hover:before{
+  box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset, -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
+ }
+
+ .addToCartBttn:hover:after {
+  box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+ }
+
+ .addToCartBttn:active {
+  transform: translateY(4px);
+ }
+ 
+ .addToCartBttn:active:after {
+  box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
+ }
+ 
+  
